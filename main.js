@@ -10,3 +10,7 @@ function setup () {
 
     nave.desenha();
 }
+
+function draw() {
+    
+}
