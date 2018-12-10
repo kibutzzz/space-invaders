@@ -1,7 +1,8 @@
 var nave;
 
 function setup () {
-    createCanvas(800, 500);
+    var myCanvas = createCanvas(640, 480);
+    myCanvas.parent("#wrapper");
     background(0, 0, 0);
 
 
