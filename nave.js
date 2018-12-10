@@ -1,6 +1,6 @@
 class Nave {
     constructor () {
-        this.pos = createVector(200, 200);
+        this.pos = createVector(320, 400);
     }
 
 
@@ -8,5 +8,8 @@ class Nave {
 
 
 Nave.prototype.desenha = function() {
+    push();
+    rectMode(CENTER);
     rect(this.pos.x, this.pos.y, 20, 20);
+    pop();
 };  
