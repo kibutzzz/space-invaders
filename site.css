@@ -11,6 +11,8 @@ h1{
     font-size: 4em;
     position: absolute;
     right: 3.75em;
+    transform: skewX(-15deg);
+    text-shadow: 0 0 20px #000;
 }
 .menu{
     border: #fffff0 solid 2px;

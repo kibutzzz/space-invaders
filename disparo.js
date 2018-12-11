@@ -13,4 +13,18 @@ Disparo.prototype.desenha = function () {
 }
 Disparo.prototype.atualizaPosicao = function () {
     this.pos.y -= 3;
+    
+}
+
+
+Disparo.prototype.checaColisao = function(inimigo) {
+
+    if(this.pos.x > inimigo.pos.x - inimigo.tamanho / 2 && 
+        this.pos.x < inimigo.pos.x + inimigo.tamanho / 2 &&
+        this.pos.y > inimigo.pos.y - inimigo.tamanho / 2 &&
+        this.pos.y < inimigo.pos.y + inimigo.tamanho / 2 ) {
+        return true;
+    }
+
+    return false;
 }

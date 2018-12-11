@@ -38,8 +38,14 @@ function draw() {
 
     nave.desenha();
 
-    inimigos.forEach((inimigo) => {
+    inimigos.forEach((inimigo, indexInimigo) => {
         inimigo.desenha();
+        nave.disparos.forEach((disparo, indexDisparo) => {
+           if(disparo.checaColisao(inimigo)) {
+               inimigos.splice(indexInimigo, 1);
+               nave.disparos.splice(indexDisparo, 1);
+           }
+        });
     });
 
     //se a seta para a direita estiver pressionada

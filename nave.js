@@ -46,7 +46,7 @@ Nave.prototype.atira = function () {
     push();
     //TODO logica dos disparos
     rectMode(CENTER);
-    console.log(this.ultimoDisparo);
+    
     if((new Date()).getTime() - this.ultimoDisparo  > this.COOLDOWN) {
         this.disparos.push(new Disparo(this.pos.x, this.pos.y));
         this.ultimoDisparo = (new Date()).getTime();
