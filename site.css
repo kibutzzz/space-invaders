@@ -63,10 +63,12 @@ td, th {
 th{
     font-weight: bold;
     color: red;
+    text-shadow: 0 0 20px #000;
 	background-color: #EEE;
 }
 td{
     color:yellow;
+    text-shadow: 0 0 20px #000;
     
 }
 footer{
