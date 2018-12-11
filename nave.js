@@ -24,21 +24,19 @@ Nave.prototype.desenha = function () {
 
 
 Nave.prototype.moverParaDireita = function () {
-    console.log("direita");
     if (this.pos.x < 640) {
         this.pos.x += this.vel;
     }
 }
 
 Nave.prototype.moverParaEsquerda = function () {
-    console.log("esquerda");
     if (this.pos.x > 0) {
         this.pos.x -= this.vel;
     }
 }
 
 Nave.prototype.atira = function () {
-    console.log("atira");
+    
     push();
     //TODO logica dos disparos
     rectMode(CENTER);
