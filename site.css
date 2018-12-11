@@ -2,8 +2,15 @@
     text-align: center;
     position: absolute;
     border: 3px solid #fffff0;
-    bottom: 3em;
-    right: 4em;
+    bottom: 4em;
+    right: 13em;
+}
+h1{
+    color:yellow;
+    font-family: 'Bungee', cursive;
+    font-size: 4em;
+    position: absolute;
+    right: 3.75em;
 }
 .menu{
     border: #fffff0 solid 2px;
@@ -40,23 +47,25 @@ table{
 	width: 30%;
 	margin-bottom : .5em;
     table-layout: fixed;
+
 }
 
 td, th {
-	padding: .7em;
+    font-family: 'Bungee', cursive;
+    padding: .7em;
 	margin: 0;
 	border: 1px solid #ccc;
 	text-align: center;
 }
 
 th{
-	font-weight: bold;
+    font-weight: bold;
+    color: red;
 	background-color: #EEE;
 }
 footer{
 	color: #F2FFFC;
     padding: 1em;
-    
     clear: both;
     position: fixed;
     bottom: 0;
