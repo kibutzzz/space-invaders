@@ -47,6 +47,7 @@ function draw() {
                pontos += 10;
            }
         });
+        inimigo.flutua();
     });
 
     //se a seta para a direita estiver pressionada
