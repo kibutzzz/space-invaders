@@ -1,6 +1,7 @@
 var nave;
 var inimigos = []
 var incremento = 1;
+var inc_inim = 2;
 function setup () {
     var myCanvas = createCanvas(640, 480);
     myCanvas.parent("#wrapper");
