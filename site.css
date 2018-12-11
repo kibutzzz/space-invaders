@@ -4,7 +4,11 @@
     border: 3px solid #fffff0;
     bottom: 3em;
     right: 4em;
-    border-radius: 30px;
+}
+.menu{
+    border: #fffff0 solid 2px;
+    position: absolute;
+    bottom: 2em;
 }
 body{
     background-image: url(galaxia.jpg);
@@ -16,8 +20,13 @@ ul{
 }
 
 ul li a{
+    margin-right: 1em;
     font-size: 2em;
+    text-decoration: none;
     color: white;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
+}
+a:hover{
+    font-family: 'star-jedi';
 }
