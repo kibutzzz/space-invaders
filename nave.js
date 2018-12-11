@@ -4,6 +4,8 @@ class Nave {
 
         this.vel = 2;
         this.disparos= [];
+        this.ultimoDisparo = (new Date()).getTime();
+        this.COOLDOWN = 400; // tempo de espera do tiro em milissegundos
     }
 
 }
@@ -44,6 +46,10 @@ Nave.prototype.atira = function () {
     push();
     //TODO logica dos disparos
     rectMode(CENTER);
-    this.disparos.push(new Disparo(this.pos.x, this.pos.y));
+    console.log(this.ultimoDisparo);
+    if((new Date()).getTime() - this.ultimoDisparo  > this.COOLDOWN) {
+        this.disparos.push(new Disparo(this.pos.x, this.pos.y));
+        this.ultimoDisparo = (new Date()).getTime();
+    }
     pop();
 }
