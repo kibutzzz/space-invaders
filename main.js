@@ -30,10 +30,10 @@ function draw() {
     text('VIDAS:' + vidas, width-160, 40);
     text('PONTOS:' +pontos, 60, 40);
 
-    if (nave.pos.x > width || nave.pos.x < 0) {
-        incremento *= -1;
-    }
-    nave.pos.x += incremento;
+    // if (nave.pos.x > width || nave.pos.x < 0) {
+    //     incremento *= -1;
+    // }
+    // nave.pos.x += incremento;
 
     nave.desenha();
 
