@@ -47,16 +47,16 @@
             Somos uma equipa enérgica, flexível e de mente aberta pronta para trabalhar duro
             para nossos clientes. Se você estiver interessado em trabalhar conosco, envie-nos uma mensagem!
         </p>
-        
+
     </div>
 
     <div class="hide" id="sair" onclick="hide_popup('#sair')">
-            <p>
-                    Deseja sair?
-            </p>
-        
-            <button onclick="exit()"> Sim </button>
-        </div>
+        <p>
+            Deseja sair?
+        </p>
+
+        <button id="btn"> Sim </button>
+    </div>
 
 
 </body>
@@ -72,14 +72,20 @@
         element.classList.remove("hide")
     }
 
-function hide_popup(selector){
-    var element = document.querySelector(selector);
-    element.classList.add("hide")
-    element.classList.remove("show")
-}
-function exit(){
+    function hide_popup(selector) {
+        var element = document.querySelector(selector);
+        element.classList.add("hide")
+        element.classList.remove("show")
+    }
+   
+        
+        document.getElementById('btn').addEventListener('click', function()
+{
     window.close();
-}
+}, false);
+    
+
+
 </script>
 
 </html>
