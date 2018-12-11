@@ -13,3 +13,5 @@ Nave.prototype.desenha = function() {
     rect(this.pos.x, this.pos.y, 20, 20);
     pop();
 };  
+
+

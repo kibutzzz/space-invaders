@@ -1,6 +1,8 @@
 class Inimigo {
-    constructor () {
-        this.pos = createVector(50, 50);
+    constructor (x, y) {
+        console.log(x,y);
+        this.pos = createVector(x, y);
+        console.log(this.pos);
     }
 }
 
@@ -8,7 +10,7 @@ class Inimigo {
 Inimigo.prototype.desenha = function() {
     push();
     rectMode(CENTER);
-    fill('red');
+    fill(255, 50, 0);
     rect(this.pos.x, this.pos.y, 40, 40);
     pop();
 };  
