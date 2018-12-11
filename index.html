@@ -16,9 +16,9 @@
 <body>
     <main>
         <section id="jogo">
-        <div id="wrapper"> </div>
-    </section>
-        
+            <div id="wrapper"> </div>
+        </section>
+
         <table>
             <thead>
                 <tr>
@@ -36,12 +36,28 @@
     <section class="menu">
         <ul>
             <li><a href="jogo.html">New Game</a></li>
-            <li><a href="sobre_nos.html">Sobre nós</a></li>
+            <li><a onclick="popup()">Sobre nós</a></li>
             <li><a href="https://google.com">Sair</a></li>
         </ul>
     </section>
+    <div id="pop-up" onclick="hide_popup()">
+        <p>
+            Um texto Qualquer.
+        </p>
+    </div>
 </body>
 <footer>
-        &copy; Léo, Lucas e Mateus
-    </footer>
+    &copy; Léo, Lucas e Mateus
+</footer>
+<script>
+var div = document.querySelector("#pop-up");
+
+function popup(){
+    div.style.display = "block";
+}
+
+function hide_popup(){
+    div.style.display = "none";
+}
+</script>
 </html>
