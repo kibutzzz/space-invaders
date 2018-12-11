@@ -8,7 +8,10 @@
 .menu{
     border: #fffff0 solid 2px;
     position: absolute;
+    padding-bottom: 15px;
     bottom: 2em;
+    width: 20%;
+    height: 10%;
 }
 body{
     background-image: url(galaxia.jpg);
@@ -21,12 +24,15 @@ ul{
 
 ul li a{
     margin-right: 1em;
-    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.8em;
     text-decoration: none;
     color: white;
     text-decoration: none;
     text-shadow: 0 0 1px #000;
 }
 a:hover{
-    font-family: 'star-jedi';
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffe8e8;
+    font-size: 2rem;
 }
