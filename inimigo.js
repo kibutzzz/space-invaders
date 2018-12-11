@@ -1,6 +1,6 @@
 class Inimigo {
     constructor (x,y) {
-        this.pos = createVector(x, y);
+        this.pos = createVector(x, y+20);
     }
 }
 
