@@ -5,6 +5,7 @@ function setup () {
     myCanvas.parent("#wrapper");
     
     nave = new Nave();
+    inimigo = new Inimigo();
 
     
 }
