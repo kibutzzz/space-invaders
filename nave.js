@@ -1,7 +1,10 @@
 class Nave {
     constructor () {
         this.pos = createVector(320, 400);
+    
+        this.vel = 2;
     }
+
 
 
 }
@@ -15,3 +18,16 @@ Nave.prototype.desenha = function() {
 };  
 
 
+Nave.prototype.moverParaDireita = function() {
+    console.log("direita");
+    if (this.pos.x < 640) {
+        this.pos.x += this.vel;
+    }
+}
+
+Nave.prototype.moverParaEsquerda = function() {
+    console.log("esquerda");
+    if (this.pos.x > 0) {
+        this.pos.x -= this.vel;
+    }
+}
