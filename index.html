@@ -39,7 +39,7 @@
         <ul style="list-style: none">
             <li><a href="jogo.html">New Game</a></li>
             <li><a onclick="popup('#popup')">Sobre nós</a></li>
-            <li><a href="popup()">Sair</a></li>
+            <li><a onclick="popup('#sair')">Sair</a></li>
         </ul>
     </section>
     <div class="hide" id="popup" onclick="hide_popup('#popup')">
@@ -47,7 +47,18 @@
                 Somos uma equipa enérgica, flexível e de mente aberta pronta para trabalhar duro
                 para nossos clientes. Se você estiver interessado em trabalhar conosco, envie-nos uma mensagem!
         </p>
+        
     </div>
+
+    <div class="hide" id="sair" onclick="hide_popup('#sair')">
+            <p>
+                    Deseja sair?
+            </p>
+        
+            <button onclick="exit()"> Sim </button>
+        </div>
+
+
 </body>
 <footer>
     &copy; Léo, Lucas e Mateus
@@ -65,6 +76,9 @@ function hide_popup(selector){
     var element = document.querySelector(selector);
     element.classList.add("hide")
     element.classList.remove("show")
+}
+function exit(){
+    window.close();
 }
 </script>
 </html>
