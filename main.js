@@ -36,6 +36,11 @@ function draw() {
             nave.moverParaEsquerda();
         }
 
+         //se a barra de espaço estiver pressionada
+         if (keyCode == 32){
+            
+            nave.atira();
+        }
     }
 }
 
