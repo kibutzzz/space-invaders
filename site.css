@@ -4,6 +4,7 @@
     border: 3px solid #fffff0;
     bottom: 3em;
     right: 4em;
+    border-radius: 30px;
 }
 body{
     background-image: url(galaxia.jpg);
