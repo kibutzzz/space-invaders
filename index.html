@@ -42,7 +42,7 @@
             <li><a href="https://google.com">Sair</a></li>
         </ul>
     </section>
-    <div id="pop-up" onclick="hide_popup()">
+    <div class="hide" id="pop-up" onclick="hide_popup()">
         <p>
                 Somos uma equipa enérgica, flexível e de mente aberta pronta para trabalhar duro
                 para nossos clientes. Se você estiver interessado em trabalhar conosco, envie-nos uma mensagem!
@@ -55,12 +55,16 @@
 <script>
 var div = document.querySelector("#pop-up");
 
-function popup(){
-    div.style.display = "block";
+function popup(selector){
+    var element = document.querySelector(selector);
+    element.classList.add("show")
+    element.classList.remove("hide")
 }
 
-function hide_popup(){
-    div.style.display = "none";
+function hide_popup(selector){
+    var element = document.querySelector(selector);
+    element.classList.add("hide")
+    element.classList.remove("show")
 }
 </script>
 </html>
