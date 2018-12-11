@@ -1,11 +1,12 @@
 var nave;
 var incremento = 1;
+var inc_inim = 2;
 function setup () {
     var myCanvas = createCanvas(640, 480);
     myCanvas.parent("#wrapper");
     
     nave = new Nave();
-    inimigo = new Inimigo();
+    inimigo = new Inimigo(width/2, 50);
 
     
 }
@@ -20,4 +21,11 @@ function draw () {
     nave.pos.x += incremento;
     
     nave.desenha();
+
+    if(inimigo.pos.x > width-40 ||
+        inimigo.pos.x < 40){
+            inc_inim *= -1;
+    }
+    inimigo.pos.x += inc_inim;
+    inimigo.desenha();
 }
