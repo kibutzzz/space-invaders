@@ -12,7 +12,7 @@ Inimigo.prototype.desenha = function() {
     push();
     rectMode(CENTER);
     fill(255, 50, 0);
-    rect(this.pos.x, this.pos.y, this.tamanho, this.tamanho);
+    rect(this.pos.x, this.pos.y, this.tamanho, this.tamanho, 7, 7, 7, 7);
     pop();
 };  
 
