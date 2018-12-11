@@ -9,7 +9,7 @@ var pontos = 0;
 function setup() {
     var myCanvas = createCanvas(640, 480);
     myCanvas.parent("#wrapper");
-    background(0, 0, 0);
+    
 
     nave = new Nave();
     for (var i = 1; i <= 10; i++) {
@@ -23,7 +23,7 @@ function setup() {
 
 function draw() {
     
-
+    background(0, 0, 0);
     fill(255);
     textSize(28);
     textFont('Georgia');
