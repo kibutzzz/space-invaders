@@ -18,9 +18,9 @@
     <main>
         <section id="jogo">
             <h1>Space Invaders</h1>
-        <div id="wrapper"> </div>
-    </section>
-        
+            <div id="wrapper"> </div>
+        </section>
+
         <table>
             <thead>
                 <tr>
@@ -31,7 +31,7 @@
             </thead>
 
             <tbody>
-             
+
             </tbody>
         </table>
     </main>
@@ -44,8 +44,8 @@
     </section>
     <div class="hide" id="popup" onclick="hide_popup('#popup')">
         <p>
-                Somos uma equipa enérgica, flexível e de mente aberta pronta para trabalhar duro
-                para nossos clientes. Se você estiver interessado em trabalhar conosco, envie-nos uma mensagem!
+            Somos uma equipa enérgica, flexível e de mente aberta pronta para trabalhar duro
+            para nossos clientes. Se você estiver interessado em trabalhar conosco, envie-nos uma mensagem!
         </p>
         
     </div>
@@ -64,13 +64,13 @@
     &copy; Léo, Lucas e Mateus
 </footer>
 <script>
-var div = document.querySelector("#pop-up");
+    var div = document.querySelector("#pop-up");
 
-function popup(selector){
-    var element = document.querySelector(selector);
-    element.classList.add("show")
-    element.classList.remove("hide")
-}
+    function popup(selector) {
+        var element = document.querySelector(selector);
+        element.classList.add("show")
+        element.classList.remove("hide")
+    }
 
 function hide_popup(selector){
     var element = document.querySelector(selector);
@@ -81,4 +81,5 @@ function exit(){
     window.close();
 }
 </script>
+
 </html>
