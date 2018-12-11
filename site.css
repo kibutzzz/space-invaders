@@ -81,4 +81,32 @@ footer{
         black 70%,
         transparent 70%);
     background-size: 20% 100%;
+
+
+
+
+
+
+    /*color: #ffffff;
+    background-color: #a3a1a1;
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    
+    margin:auto;
+    padding: 0.5em;
+    bottom:0;*/
+}
+#pop-up{
+    display: none;
+    z-index: 1000;
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 0 9999px rgba(0,0,0,0.8);
+    border-radius: 1em;
 }
