@@ -44,6 +44,7 @@ function draw() {
            if(disparo.checaColisao(inimigo)) {
                inimigos.splice(indexInimigo, 1);
                nave.disparos.splice(indexDisparo, 1);
+               pontos += 10;
            }
         });
     });
