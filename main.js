@@ -40,4 +40,25 @@ function draw() {
     inimigos.forEach((inimigo) => {
         inimigo.desenha();
     });
+
+    //verifica se alguma tecla esta pressionada
+    if (keyIsPressed) {
+        //se a seta para a direita estiver pressionada
+        if (keyCode == 39) {
+            nave.moverParaDireita();
+        }
+
+        //se a seta para a esquerda estiver pressionada
+        if (keyCode == 37) {
+            nave.moverParaEsquerda();
+        }
+
+         //se a barra de espaço estiver pressionada
+         if (keyCode == 32){
+            
+            nave.atira();
+        }
+    }
 }
+
+
