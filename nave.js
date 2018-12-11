@@ -16,9 +16,13 @@ Nave.prototype.desenha = function () {
     rect(this.pos.x, this.pos.y, 20, 20);
     pop();
 
-    this.disparos.forEach((disparo) => {
+    this.disparos.forEach((disparo, index) => {
         disparo.desenha();
         disparo.atualizaPosicao();
+        
+        if(disparo.pos.y < 0) {
+            this.disparos.splice(index, 1);
+        }
     });
 };
 
