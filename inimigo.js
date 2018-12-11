@@ -9,6 +9,6 @@ Inimigo.prototype.desenha = function() {
     push();
     rectMode(CENTER);
     fill(255, 50, 0);
-    rect(this.pos.x, this.pos.y, 40, 40);
+    rect(this.pos.x, this.pos.y, 40, 40, 7, 7, 7, 7);
     pop();
 };  
